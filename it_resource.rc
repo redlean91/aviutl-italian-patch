@@ -1,80 +1,80 @@
 #include <winresrc.h>
 
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
 
 AVIUTL MENU
 BEGIN
     POPUP "File"
     BEGIN
-        MENUITEM "Open (Ctrl+O)",               5097
-        MENUITEM "Close",                       5157
-        MENUITEM "Append",                      5100
-        MENUITEM "Import Audio",                5168
+        MENUITEM "Apri (Ctrl+O)",               5097
+        MENUITEM "Chiudi",                       5157
+        MENUITEM "Aggiungi al progetto",                      5100
+        MENUITEM "Importa Audio",                5168
         MENUITEM SEPARATOR
-        MENUITEM "[Project] Open",              5118
-        MENUITEM "[Project] Save New",          1023
-        MENUITEM "[Project] Overwrite",         1024
+        MENUITEM "[Progetto] Apri",              5118
+        MENUITEM "[Progetto] Salva con nome",          1023
+        MENUITEM "[Progetto] Sovrascrivi",         1024
         MENUITEM SEPARATOR
-        MENUITEM "Export as AVI (Ctrl+S)",      1003
-        MENUITEM "Export as WAV",               1062
-        POPUP "Export with Plugin"
+        MENUITEM "Esporta come AVI (Ctrl+S)",      1003
+        MENUITEM "Esporta come WAV",               1062
+        POPUP "Esporta con plugin Plugin"
         BEGIN
             MENUITEM "",                            5395
         END
-        MENUITEM "Batch Export",                1025
-        MENUITEM "Abort Export (Esc)",          1009
+        MENUITEM "Esportazione in blocco",                1025
+        MENUITEM "Annulla esportazione (Esc)",          1009
         MENUITEM SEPARATOR
-        POPUP "Import"
+        POPUP "Importa"
         BEGIN
-            MENUITEM "Keyframe list",               5167
+            MENUITEM "Lista keyframe",               5167
             MENUITEM "",                            14000
         END
-        POPUP "Export"
+        POPUP "Esporta"
         BEGIN
-            MENUITEM "Keyframe list",               1054
+            MENUITEM "Lista keyframe",               1054
             MENUITEM "",                            15000
         END
-        POPUP "AVI File Operations"
+        POPUP "Operazioni file AVI"
         BEGIN
-            MENUITEM "Joint",                       1057
-            MENUITEM "Mux to AVI",                  1058
+            MENUITEM "Unisci",                       1057
+            MENUITEM "Converti a AVI",                  1058
         END
-        POPUP "Recent files"
+        POPUP "File recenti"
         BEGIN
-            MENUITEM "None",                        5596
+            MENUITEM "Nessun file",                        5596
             MENUITEM SEPARATOR
-            MENUITEM "Clear List",                  1073
+            MENUITEM "Pulisci lista",                  1073
         END
         MENUITEM SEPARATOR
-        POPUP "Settings"
+        POPUP "Impostazioni"
         BEGIN
-            POPUP "Priority"
+            POPUP "Priorità"
             BEGIN
-                MENUITEM "Highest",                     1041
-                MENUITEM "High",                        1040
-                MENUITEM "Normal",                      1039
-                MENUITEM "Low",                         1038
-                MENUITEM "Lowest",                      1037
+                MENUITEM "Più alta",                     1041
+                MENUITEM "Alta",                        1040
+                MENUITEM "Normale",                      1039
+                MENUITEM "Bassa",                         1038
+                MENUITEM "Più bassa",                      1037
                 MENUITEM SEPARATOR
                 MENUITEM "Realtime",                    1042
             END
             MENUITEM SEPARATOR
-            MENUITEM "System",                      108
+            MENUITEM "Sistema",                      108
             MENUITEM "Codec",                       109
-            POPUP "Importer plugin"
+            POPUP "Plugin importatore"
             BEGIN
                 MENUITEM "",                            5595
             END
-            MENUITEM "Importer plugins priority",      1086
-            MENUITEM "Hotkey",                102
-            MENUITEM "Language",                    106
+            MENUITEM "Priorità plugins importatore",      1086
+            MENUITEM "Tasti di scelta rapida",                102
+            MENUITEM "Lingua",                    106
             MENUITEM SEPARATOR
-            MENUITEM "Reset window position",      111
+            MENUITEM "Reimposta posizione finestra",      111
         END
         MENUITEM SEPARATOR
-        MENUITEM "Exit",                        1002
+        MENUITEM "Esci",                        1002
     END
-    POPUP "Filters"
+    POPUP "Filtri"
     BEGIN
         MENUITEM "",                            10000
         MENUITEM SEPARATOR
@@ -82,7 +82,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Disable ALL",                 5183
     END
-    POPUP "Filter+"
+    POPUP "Filtri+"
     BEGIN
         MENUITEM "",                            11000
         MENUITEM SEPARATOR
@@ -95,77 +95,77 @@ BEGIN
             MENUITEM "Video",                       5127
             MENUITEM "Audio",                       5128
             MENUITEM SEPARATOR
-            MENUITEM "Plugin Export",               5399
+            MENUITEM "Plugin esportatore",               5399
         END
-        POPUP "Filter Order"
+        POPUP "Ordine dei filtri"
         BEGIN
-            MENUITEM "Video filters",               5139
+            MENUITEM "Filtri video",               5139
             MENUITEM "Audio filters",               5181
         END
     END
-    POPUP "Edit"
+    POPUP "Modifica"
     BEGIN
-        MENUITEM "Copy image (Ctrl+C)",         1020
-        MENUITEM "Paste image (Ctrl+V)",        5117
-        MENUITEM "Copy to clipboard",           1026
-        MENUITEM "Paste from clipboard",        5123
-        MENUITEM "Copy rendered image to clipboard", 1070
-        MENUITEM "Go to frame (Ctrl+G)",      5131
-        MENUITEM "Set selection",               5115
-        MENUITEM "Paste image into selected frames", 5184
-        MENUITEM "Crop to selected frames",     5143
-        MENUITEM "Delete selected frames",      5101
+        MENUITEM "Copia immagine (Ctrl+C)",         1020
+        MENUITEM "Incolla immagine (Ctrl+V)",        5117
+        MENUITEM "Copia negli appunti",           1026
+        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia immagine renderizzata negli appunti", 1070
+        MENUITEM "Vai a frame (Ctrl+G)",      5131
+        MENUITEM "Imposta selezione",               5115
+        MENUITEM "Incolla immagine nei frame selezionati", 5184
+        MENUITEM "Taglia a frame selezionati",     5143
+        MENUITEM "Cancella i frame selezionati",      5101
         MENUITEM SEPARATOR
-        MENUITEM "Undo (Ctrl+Z)",               5147
-        MENUITEM "Select all (Ctrl+A)",         5112
+        MENUITEM "Annulla (Ctrl+Z)",               5147
+        MENUITEM "Seleziona tutto (Ctrl+A)",         5112
         MENUITEM SEPARATOR
-        MENUITEM "Create new profile for selected frames", 5109
-        MENUITEM "Create new compression settings for selected frames", 5126
-        MENUITEM "Set deinterlacing for selected frames", 5125
-        POPUP "Deinterlace current frame"
+        MENUITEM "Crea nuovo profilo per i frame selezionati", 5109
+        MENUITEM "Crea nuove impostazioni di compressione per i frame selezionati", 5126
+        MENUITEM "Imposta la deinterlacciatura per i frame selezionati", 5125
+        POPUP "Deinterlaccia i frame selezionati"
         BEGIN
             MENUITEM "Standard (Keypad 0)",         5196
-            MENUITEM "Invert (Keypad 1)",           5197
-            MENUITEM "Odd (Keypad 2)",              5198
-            MENUITEM "Even (Keypad 3)",             5199
+            MENUITEM "Inverti (Keypad 1)",           5197
+            MENUITEM "Dispari (Keypad 2)",              5198
+            MENUITEM "Pari (Keypad 3)",             5199
             MENUITEM "Bob (Keypad 4)",              5200
             MENUITEM "Auto (Keypad 5)",             5201
         END
-        POPUP "Current frame profile"
+        POPUP "Profilo frame attuale"
         BEGIN
-            MENUITEM "Standard Profile (0)",        5206
-            MENUITEM "Profile[1] (1)",              5207
-            MENUITEM "Profile[2] (2)",              5208
-            MENUITEM "Profile[3] (3)",              5209
-            MENUITEM "Profile[4] (4)",              5210
-            MENUITEM "Profile[5] (5)",              5211
-            MENUITEM "Profile[6] (6)",              5212
-            MENUITEM "Profile[7] (7)",              5213
-            MENUITEM "Profile[8] (8)",              5214
-            MENUITEM "Profile[9] (9)",              5215
+            MENUITEM "Profilo standard (0)",        5206
+            MENUITEM "Profilo[1] (1)",              5207
+            MENUITEM "Profilo[2] (2)",              5208
+            MENUITEM "Profilo[3] (3)",              5209
+            MENUITEM "Profilo[4] (4)",              5210
+            MENUITEM "Profilo[5] (5)",              5211
+            MENUITEM "Profilo[6] (6)",              5212
+            MENUITEM "Profilo[7] (7)",              5213
+            MENUITEM "Profilo[8] (8)",              5214
+            MENUITEM "Profilo[9] (9)",              5215
         END
         MENUITEM SEPARATOR
-        MENUITEM "Set as keyframe",             5129
-        MENUITEM "Drop this frame if needed",   5132
-        MENUITEM "Mark frame",                  5130
-        MENUITEM "Set as copy-frame",           5156
+        MENUITEM "Imposta come keyframe",             5129
+        MENUITEM "Lascia questo frame se necessario",   5132
+        MENUITEM "Contrassegna il frame",                  5130
+        MENUITEM "Imposta come copia frame",           5156
         MENUITEM SEPARATOR
-        MENUITEM "Change play speed info",      5398
+        MENUITEM "Cambia info velocità riproduzione",      5398
         MENUITEM SEPARATOR
-        POPUP "Basic"
+        POPUP "Base"
         BEGIN
-            MENUITEM "Next frame (→)",              9002
-            MENUITEM "Prev frame (←)",              9001
-            MENUITEM "Skip next deleted frames (↓)", 5142
-            MENUITEM "Skip prev deleted frames (↑)", 5141
-            MENUITEM "To last frame (Home)",       5396
-            MENUITEM "To last frame (End)",          5397
-            MENUITEM "Start of selection ( [ )",    5110
-            MENUITEM "End of selection ( ] )",      5111
-            MENUITEM "To start of selection",       5103
-            MENUITEM "To end of selection",         5104
-            MENUITEM "Next keyframe",               5174
-            MENUITEM "Prev keyframe",               5175
+            MENUITEM "Prossimo frame (→)",              9002
+            MENUITEM "Frame precedente (←)",              9001
+            MENUITEM "Salta i prossimi frame cancellati (↓)", 5142
+            MENUITEM "Salta gli scorsi frame cancellati (↑)", 5141
+            MENUITEM "Vai all'ultimo frame (Home)",       5396
+            MENUITEM "Vai all'ultimo frame (End)",          5397
+            MENUITEM "Inizio selezione ( [ )",    5110
+            MENUITEM "Fine selezione ( ] )",      5111
+            MENUITEM "Vai all'inizio della selezione",       5103
+            MENUITEM "Vai alla fine della selezione",         5104
+            MENUITEM "Prossimo keyframe",               5174
+            MENUITEM "Keyframe precedente",               5175
             MENUITEM "Next marked frame",           5178
             MENUITEM "Prev marked frame",           5179
             MENUITEM "Next frame with different profile", 5176
@@ -224,33 +224,33 @@ BEGIN
         MENUITEM "Show overlay",                9111
         MENUITEM "Show rendered image only while saving", 5144
     END
-    POPUP "Info"
+    POPUP "Informazioni"
     BEGIN
-        MENUITEM "File info",                        1006
+        MENUITEM "Info sul file",                        1006
         MENUITEM "Activated overlays",           104
         MENUITEM "Filter plugins",               101
-        MENUITEM "Import plugins",               103
-        MENUITEM "Export plugins",               105
+        MENUITEM "Plugin di importazione",               103
+        MENUITEM "Plugin di esportazione",               105
         MENUITEM "Color conversion plugins",     110
-        MENUITEM "Language patches",          107
+        MENUITEM "Patch delle lingue",          107
         MENUITEM SEPARATOR
-        MENUITEM "Version",                     100
+        MENUITEM "Versione",                     100
     END
 END
 
 PLAY MENU
 BEGIN
-    POPUP "Playback"
+    POPUP "Riproduzione"
     BEGIN
-        MENUITEM "Play/Pause",                  105
+        MENUITEM "Riproduci/Pausa",                  105
         MENUITEM "Stop",                        101
         MENUITEM SEPARATOR
-        MENUITEM "Play selection",              107
+        MENUITEM "Selezione riproduzione",              107
         MENUITEM "Loop",                        103
     END
     POPUP "Display"
     BEGIN
-        POPUP "Resolution"
+        POPUP "Risoluzione"
         BEGIN
             MENUITEM "25%",                         117
             MENUITEM "50%",                         110
@@ -259,13 +259,13 @@ BEGIN
             MENUITEM "640x480",                     113
             MENUITEM "320x240",                     114
             MENUITEM "160x120",                     115
-            MENUITEM "WindowSize",                  116
+            MENUITEM "Adatta a finestra",                  116
             MENUITEM SEPARATOR
-            MENUITEM "Maximize",                    109
+            MENUITEM "Massimizza",                    109
         END
         MENUITEM SEPARATOR
-        MENUITEM "Disable video overlay",       104
-        MENUITEM "Show overlay",                106
+        MENUITEM "Disabilita overlay video",       104
+        MENUITEM "Abilita overlay",                106
     END
 END
 
@@ -297,7 +297,7 @@ CONTEXT MENU
 BEGIN
     POPUP "context"
     BEGIN
-        POPUP "Magnification"
+        POPUP "Ingrandimento"
         BEGIN
             MENUITEM "25%",                         9200
             MENUITEM "50%",                         9201
@@ -307,17 +307,17 @@ BEGIN
             MENUITEM "400%",                        9205
         END
         MENUITEM SEPARATOR
-        MENUITEM "Copy",                        1020
-        MENUITEM "Paste",                       5117
-        MENUITEM "Copy to clipboard",           1026
-        MENUITEM "Paste from clipboard",        5123
-        MENUITEM "Copy rendered Image to clipboard", 1070
-        MENUITEM "Delete selection",            5101
+        MENUITEM "Copia",                        1020
+        MENUITEM "Incolla",                       5117
+        MENUITEM "Copia negli appunti",           1026
+        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia immagine renderizzata negli appunti", 1070
+        MENUITEM "Cancella selezione",            5101
         MENUITEM SEPARATOR
-        MENUITEM "Undo",                        5147
-        MENUITEM "Select all",                  5112
+        MENUITEM "Annulla",                        5147
+        MENUITEM "Seleziona tutto",                  5112
         MENUITEM SEPARATOR
-        MENUITEM "Mark",                        5130
+        MENUITEM "Contrassegna",                        5130
     END
 END
 
@@ -325,8 +325,8 @@ CONTEXT2 MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "Toggle filter",               13000
-        MENUITEM "Reset parameters",            13001
+        MENUITEM "Attiva/disattiva filtro",               13000
+        MENUITEM "Reimposta parametri",            13001
     END
 END
 
@@ -334,16 +334,17 @@ CONTEXT3 MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "Copy",                        1020
-        MENUITEM "Paste",                       5117
-        MENUITEM "Copy to clipboard",           1026
-        MENUITEM "Paste from clipboard",        5123
-        MENUITEM "Delete",                      5101
-        MENUITEM "Undo",                        5147
-        MENUITEM "Select all",                  5112
-        MENUITEM "Invert selection",            5152
+        MENUITEM "Copia",                        1020
+        MENUITEM "Incolla",                       5117
+        MENUITEM "Copia negli appunti",           1026
+        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia immagine renderizzata negli appunti", 1070
+        MENUITEM "Cancella selezione",            5101
+        MENUITEM "Annulla",                        5147
+        MENUITEM "Seleziona tutto",                  5112
+        MENUITEM "Inverti selezione",                  5152
         MENUITEM SEPARATOR
-        MENUITEM "Mark",                        5130
+        MENUITEM "Contrassegna",                        5130
     END
 END
 
@@ -532,15 +533,15 @@ BEGIN
     PUSHBUTTON      "Reset",32700,276,196,52,14,BS_CENTER
 END
 
-LANG DIALOGEX 0, 0, 128, 80
+LANG DIALOGEX 0, 0, 256, 80
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Language"
+CAPTION "Lingua"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    PUSHBUTTON      "OK",1,8,32,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,68,32,52,14,BS_CENTER
-    COMBOBOX        32500,8,8,112,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "*Effective after restart",-1,16,55,96,16,NOT WS_GROUP
+    PUSHBUTTON      "OK",1,74,32,52,14,BS_CENTER
+    PUSHBUTTON      "Cancel",2,130,32,52,14,BS_CENTER
+    COMBOBOX        32500,8,8,240,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "*Effettivo dopo un riavvio",-1,16,55,96,16,NOT WS_GROUP
 END
 
 LOAD_OPTION DIALOGEX 0, 0, 370, 72
@@ -762,8 +763,8 @@ END
 
 STRINGTABLE
 BEGIN
-    0                       "English"
-    1                       "English for v1.00, Maverick Tse, sykhro"
+    0                       "Italiano"
+    1                       "Italiano per v1.00, og: Maverick Tse, sykhro, it: Redlean"
     10                      "Default"
     11                      "Auto"
     12                      "None"
@@ -924,14 +925,14 @@ BEGIN
     1024                    "Only a max of %d files can be joint."
     1025                    "A proper file may not be produced without recompression. Proceed?"
     1026                    "Missing export plugin"
-    1028                    "File info"
+    1028                    "Informazioni file"
     1029                    "Filter plugins"
     1030                    "Import plugins"
     1031                    "Export plugins"
-    1032                    "Overlay info"
-    1033                    "Version info"
-    1034                    "Language info"
-    1035                    "Insufficient memory"
+    1032                    "Informazioni overlay"
+    1033                    "Informazioni versione"
+    1034                    "Informazioni lingue"
+    1035                    "Memoria insufficiente"
     1036                    "Some items failed during batch export."
     1037                    "Delete all?"
     1038                    "Failed importing file.\n\nFile format is either not supported or\nthe relevant codec or plugin\nis not being registered."
