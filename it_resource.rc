@@ -2,74 +2,79 @@
 
 LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
 
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
 AVIUTL MENU
 BEGIN
     POPUP "File"
     BEGIN
         MENUITEM "Apri (Ctrl+O)",               5097
-        MENUITEM "Chiudi",                       5157
-        MENUITEM "Aggiungi al progetto",                      5100
-        MENUITEM "Importa Audio",                5168
+        MENUITEM "Chiudi",                      5157
+        MENUITEM "Aggiungi al progetto",        5100
+        MENUITEM "Importa Audio",               5168
         MENUITEM SEPARATOR
-        MENUITEM "[Progetto] Apri",              5118
-        MENUITEM "[Progetto] Salva con nome",          1023
-        MENUITEM "[Progetto] Sovrascrivi",         1024
+        MENUITEM "[Progetto] Apri",             5118
+        MENUITEM "[Progetto] Salva con nome",   1023
+        MENUITEM "[Progetto] Sovrascrivi",      1024
         MENUITEM SEPARATOR
-        MENUITEM "Esporta come AVI (Ctrl+S)",      1003
-        MENUITEM "Esporta come WAV",               1062
+        MENUITEM "Esporta come AVI (Ctrl+S)",   1003
+        MENUITEM "Esporta come WAV",            1062
         POPUP "Esporta con plugin Plugin"
         BEGIN
             MENUITEM "",                            5395
         END
-        MENUITEM "Esportazione in blocco",                1025
-        MENUITEM "Annulla esportazione (Esc)",          1009
+        MENUITEM "Esportazione in blocco",      1025
+        MENUITEM "Annulla esportazione (Esc)",  1009
         MENUITEM SEPARATOR
         POPUP "Importa"
         BEGIN
-            MENUITEM "Lista keyframe",               5167
+            MENUITEM "Lista keyframe",              5167
             MENUITEM "",                            14000
         END
         POPUP "Esporta"
         BEGIN
-            MENUITEM "Lista keyframe",               1054
+            MENUITEM "Lista keyframe",              1054
             MENUITEM "",                            15000
         END
         POPUP "Operazioni file AVI"
         BEGIN
-            MENUITEM "Unisci",                       1057
-            MENUITEM "Converti a AVI",                  1058
+            MENUITEM "Unisci",                      1057
+            MENUITEM "Converti a AVI",              1058
         END
         POPUP "File recenti"
         BEGIN
-            MENUITEM "Nessun file",                        5596
+            MENUITEM "Nessun file",                 5596
             MENUITEM SEPARATOR
-            MENUITEM "Pulisci lista",                  1073
+            MENUITEM "Pulisci lista",               1073
         END
         MENUITEM SEPARATOR
         POPUP "Impostazioni"
         BEGIN
             POPUP "Priorità"
             BEGIN
-                MENUITEM "Più alta",                     1041
+                MENUITEM "Più alta",                    1041
                 MENUITEM "Alta",                        1040
-                MENUITEM "Normale",                      1039
-                MENUITEM "Bassa",                         1038
-                MENUITEM "Più bassa",                      1037
+                MENUITEM "Normale",                     1039
+                MENUITEM "Bassa",                       1038
+                MENUITEM "Più bassa",                   1037
                 MENUITEM SEPARATOR
                 MENUITEM "Realtime",                    1042
             END
             MENUITEM SEPARATOR
-            MENUITEM "Sistema",                      108
+            MENUITEM "Sistema",                     108
             MENUITEM "Codec",                       109
             POPUP "Plugin importatore"
             BEGIN
                 MENUITEM "",                            5595
             END
-            MENUITEM "Priorità plugins importatore",      1086
-            MENUITEM "Tasti di scelta rapida",                102
-            MENUITEM "Lingua",                    106
+            MENUITEM "Priorità plugin importatore", 1086
+            MENUITEM "Tasti di scelta rapida",      102
+            MENUITEM "Lingua",                      106
             MENUITEM SEPARATOR
-            MENUITEM "Reimposta posizione finestra",      111
+            MENUITEM "Reimposta posizione finestra", 111
         END
         MENUITEM SEPARATOR
         MENUITEM "Esci",                        1002
@@ -80,7 +85,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "",                            10999
         MENUITEM SEPARATOR
-        MENUITEM "Disable ALL",                 5183
+        MENUITEM "Disabilita tutti",            5183
     END
     POPUP "Filtri+"
     BEGIN
@@ -90,34 +95,34 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "",                            11998
         MENUITEM SEPARATOR
-        POPUP "Compression"
+        POPUP "Compressione"
         BEGIN
             MENUITEM "Video",                       5127
             MENUITEM "Audio",                       5128
             MENUITEM SEPARATOR
-            MENUITEM "Plugin esportatore",               5399
+            MENUITEM "Plugin esportatore",          5399
         END
         POPUP "Ordine dei filtri"
         BEGIN
-            MENUITEM "Filtri video",               5139
+            MENUITEM "Filtri video",                5139
             MENUITEM "Audio filters",               5181
         END
     END
     POPUP "Modifica"
     BEGIN
-        MENUITEM "Copia immagine (Ctrl+C)",         1020
-        MENUITEM "Incolla immagine (Ctrl+V)",        5117
-        MENUITEM "Copia negli appunti",           1026
-        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia immagine (Ctrl+C)",     1020
+        MENUITEM "Incolla immagine (Ctrl+V)",   5117
+        MENUITEM "Copia negli appunti",         1026
+        MENUITEM "Incolla dagli appunti",       5123
         MENUITEM "Copia immagine renderizzata negli appunti", 1070
-        MENUITEM "Vai a frame (Ctrl+G)",      5131
-        MENUITEM "Imposta selezione",               5115
+        MENUITEM "Vai a frame (Ctrl+G)",        5131
+        MENUITEM "Imposta selezione",           5115
         MENUITEM "Incolla immagine nei frame selezionati", 5184
-        MENUITEM "Taglia a frame selezionati",     5143
-        MENUITEM "Cancella i frame selezionati",      5101
+        MENUITEM "Taglia a frame selezionati",  5143
+        MENUITEM "Cancella i frame selezionati", 5101
         MENUITEM SEPARATOR
-        MENUITEM "Annulla (Ctrl+Z)",               5147
-        MENUITEM "Seleziona tutto (Ctrl+A)",         5112
+        MENUITEM "Annulla (Ctrl+Z)",            5147
+        MENUITEM "Seleziona tutto (Ctrl+A)",    5112
         MENUITEM SEPARATOR
         MENUITEM "Crea nuovo profilo per i frame selezionati", 5109
         MENUITEM "Crea nuove impostazioni di compressione per i frame selezionati", 5126
@@ -125,8 +130,8 @@ BEGIN
         POPUP "Deinterlaccia i frame selezionati"
         BEGIN
             MENUITEM "Standard (Keypad 0)",         5196
-            MENUITEM "Inverti (Keypad 1)",           5197
-            MENUITEM "Dispari (Keypad 2)",              5198
+            MENUITEM "Inverti (Keypad 1)",          5197
+            MENUITEM "Dispari (Keypad 2)",          5198
             MENUITEM "Pari (Keypad 3)",             5199
             MENUITEM "Bob (Keypad 4)",              5200
             MENUITEM "Auto (Keypad 5)",             5201
@@ -145,27 +150,27 @@ BEGIN
             MENUITEM "Profilo[9] (9)",              5215
         END
         MENUITEM SEPARATOR
-        MENUITEM "Imposta come keyframe",             5129
-        MENUITEM "Lascia questo frame se necessario",   5132
-        MENUITEM "Contrassegna il frame",                  5130
-        MENUITEM "Imposta come copia frame",           5156
+        MENUITEM "Imposta come keyframe",       5129
+        MENUITEM "Lascia questo frame se necessario", 5132
+        MENUITEM "Contrassegna il frame",       5130
+        MENUITEM "Imposta come copia frame",    5156
         MENUITEM SEPARATOR
-        MENUITEM "Cambia info velocità riproduzione",      5398
+        MENUITEM "Cambia info velocità riproduzione", 5398
         MENUITEM SEPARATOR
         POPUP "Base"
         BEGIN
-            MENUITEM "Prossimo frame (→)",              9002
-            MENUITEM "Frame precedente (←)",              9001
-            MENUITEM "Salta i prossimi frame cancellati (↓)", 5142
-            MENUITEM "Salta gli scorsi frame cancellati (↑)", 5141
-            MENUITEM "Vai all'ultimo frame (Home)",       5396
-            MENUITEM "Vai all'ultimo frame (End)",          5397
-            MENUITEM "Inizio selezione ( [ )",    5110
-            MENUITEM "Fine selezione ( ] )",      5111
-            MENUITEM "Vai all'inizio della selezione",       5103
-            MENUITEM "Vai alla fine della selezione",         5104
-            MENUITEM "Prossimo keyframe",               5174
-            MENUITEM "Keyframe precedente",               5175
+            MENUITEM "Prossimo frame (â†’)",        9002
+            MENUITEM "Frame precedente (â†)",      9001
+            MENUITEM "Salta i prossimi frame cancellati (â†“)", 5142
+            MENUITEM "Salta gli scorsi frame cancellati (â†‘)", 5141
+            MENUITEM "Vai all'ultimo frame (Home)", 5396
+            MENUITEM "Vai all'ultimo frame (End)",  5397
+            MENUITEM "Inizio selezione ( [ )",      5110
+            MENUITEM "Fine selezione ( ] )",        5111
+            MENUITEM "Vai all'inizio della selezione", 5103
+            MENUITEM "Vai alla fine della selezione", 5104
+            MENUITEM "Prossimo keyframe",           5174
+            MENUITEM "Keyframe precedente",         5175
             MENUITEM "Next marked frame",           5178
             MENUITEM "Prev marked frame",           5179
             MENUITEM "Next frame with different profile", 5176
@@ -184,20 +189,20 @@ BEGIN
             MENUITEM "Copy frame number to clipboard", 1090
         END
     END
-    POPUP "Profile"
+    POPUP "Profilo"
     BEGIN
         MENUITEM "",                            8005
         MENUITEM SEPARATOR
-        POPUP "Edit profile"
+        POPUP "Modifica profilo"
         BEGIN
-            MENUITEM "New profile",                 8001
-            MENUITEM "Delete profile",              8002
-            MENUITEM "Reset profile",               8000
+            MENUITEM "Nuovo profilo",               8001
+            MENUITEM "Cancella profilo",            8002
+            MENUITEM "Reimposta profilo",           8000
         END
     END
-    POPUP "Window"
+    POPUP "Finestra"
     BEGIN
-        POPUP "Magnification"
+        POPUP "Ingrandimento"
         BEGIN
             MENUITEM "25%",                         9200
             MENUITEM "50%",                         9201
@@ -205,36 +210,36 @@ BEGIN
             MENUITEM "200%",                        9203
             MENUITEM "300%",                        9204
             MENUITEM "400%",                        9205
-            MENUITEM "WindowSize",                  9206
+            MENUITEM "Adatta a finestra",           9206
             MENUITEM SEPARATOR
-            MENUITEM "Zoom in(+(Keypad))",          9107
-            MENUITEM "Zoom out(-(Keypad))",         9108
+            MENUITEM "Ingrandisci (+(Keypad))",     9107
+            MENUITEM "Diminuisci (-(Keypad))",      9108
         END
-        MENUITEM "Show waveform",               9104
-        MENUITEM "Show time",                   9114
-        MENUITEM "Preview while saving",        9105
-        MENUITEM "Show datarate while saving",  9115
-        MENUITEM "Hint on frames to be dropped [x]", 9106
-        MENUITEM "Hint on frames to be recompressed [!]", 9110
-        MENUITEM "Hint on keyframes[*]",        9109
+        MENUITEM "Mostra forma d'onda audio",   9104
+        MENUITEM "Mostra tempo",                9114
+        MENUITEM "Anteprima durante l'esportazione", 9105
+        MENUITEM "Mostra data rate quando si esporta", 9115
+        MENUITEM "Suggerisci frame da scartare [x]", 9106
+        MENUITEM "Suggerisci frame da ricomprimere [!]", 9110
+        MENUITEM "Suggerisci fotogrammi chiave [*]", 9109
         MENUITEM SEPARATOR
         MENUITEM "",                            10998
         MENUITEM SEPARATOR
-        MENUITEM "Always on top",               9113
-        MENUITEM "Show overlay",                9111
-        MENUITEM "Show rendered image only while saving", 5144
+        MENUITEM "Sempre in primo piano",       9113
+        MENUITEM "Mostra overlay",              9111
+        MENUITEM "Mostra anteprima solo in esportazione", 5144
     END
     POPUP "Informazioni"
     BEGIN
-        MENUITEM "Info sul file",                        1006
-        MENUITEM "Activated overlays",           104
-        MENUITEM "Filter plugins",               101
-        MENUITEM "Plugin di importazione",               103
-        MENUITEM "Plugin di esportazione",               105
-        MENUITEM "Color conversion plugins",     110
+        MENUITEM "Info sul file",               1006
+        MENUITEM "Activated overlays",          104
+        MENUITEM "Filter plugins",              101
+        MENUITEM "Plugin di importazione",      103
+        MENUITEM "Plugin di esportazione",      105
+        MENUITEM "Color conversion plugins",    110
         MENUITEM "Patch delle lingue",          107
         MENUITEM SEPARATOR
-        MENUITEM "Versione",                     100
+        MENUITEM "Versione",                    100
     END
 END
 
@@ -242,10 +247,10 @@ PLAY MENU
 BEGIN
     POPUP "Riproduzione"
     BEGIN
-        MENUITEM "Riproduci/Pausa",                  105
+        MENUITEM "Riproduci/Pausa",             105
         MENUITEM "Stop",                        101
         MENUITEM SEPARATOR
-        MENUITEM "Selezione riproduzione",              107
+        MENUITEM "Selezione riproduzione",      107
         MENUITEM "Loop",                        103
     END
     POPUP "Display"
@@ -259,13 +264,13 @@ BEGIN
             MENUITEM "640x480",                     113
             MENUITEM "320x240",                     114
             MENUITEM "160x120",                     115
-            MENUITEM "Adatta a finestra",                  116
+            MENUITEM "Adatta a finestra",           116
             MENUITEM SEPARATOR
-            MENUITEM "Massimizza",                    109
+            MENUITEM "Massimizza",                  109
         END
         MENUITEM SEPARATOR
-        MENUITEM "Disabilita overlay video",       104
-        MENUITEM "Abilita overlay",                106
+        MENUITEM "Disabilita overlay video",    104
+        MENUITEM "Abilita overlay",             106
     END
 END
 
@@ -282,14 +287,14 @@ CONTEXT_TOOL MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "1 Column",                    100
-        MENUITEM "2 Column",                    101
-        MENUITEM "3 Column",                    102
-        MENUITEM "4 Column",                    103
+        MENUITEM "1 Colonna",                   100
+        MENUITEM "2 Colonne",                   101
+        MENUITEM "3 Colonne",                   102
+        MENUITEM "4 Colonne",                   103
         MENUITEM SEPARATOR
-        MENUITEM "Show icons",                  110
-        MENUITEM "Show basic settings",         111
-        MENUITEM "Show filters",                112
+        MENUITEM "Mostra icone",                110
+        MENUITEM "Mostra impostazioni base",    111
+        MENUITEM "Mostra filtri",               112
     END
 END
 
@@ -307,17 +312,17 @@ BEGIN
             MENUITEM "400%",                        9205
         END
         MENUITEM SEPARATOR
-        MENUITEM "Copia",                        1020
-        MENUITEM "Incolla",                       5117
-        MENUITEM "Copia negli appunti",           1026
-        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia",                       1020
+        MENUITEM "Incolla",                     5117
+        MENUITEM "Copia negli appunti",         1026
+        MENUITEM "Incolla dagli appunti",       5123
         MENUITEM "Copia immagine renderizzata negli appunti", 1070
-        MENUITEM "Cancella selezione",            5101
+        MENUITEM "Cancella selezione",          5101
         MENUITEM SEPARATOR
-        MENUITEM "Annulla",                        5147
-        MENUITEM "Seleziona tutto",                  5112
+        MENUITEM "Annulla",                     5147
+        MENUITEM "Seleziona tutto",             5112
         MENUITEM SEPARATOR
-        MENUITEM "Contrassegna",                        5130
+        MENUITEM "Contrassegna",                5130
     END
 END
 
@@ -325,8 +330,8 @@ CONTEXT2 MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "Attiva/disattiva filtro",               13000
-        MENUITEM "Reimposta parametri",            13001
+        MENUITEM "Attiva/disattiva filtro",     13000
+        MENUITEM "Reimposta parametri",         13001
     END
 END
 
@@ -334,17 +339,17 @@ CONTEXT3 MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "Copia",                        1020
-        MENUITEM "Incolla",                       5117
-        MENUITEM "Copia negli appunti",           1026
-        MENUITEM "Incolla dagli appunti",        5123
+        MENUITEM "Copia",                       1020
+        MENUITEM "Incolla",                     5117
+        MENUITEM "Copia negli appunti",         1026
+        MENUITEM "Incolla dagli appunti",       5123
         MENUITEM "Copia immagine renderizzata negli appunti", 1070
-        MENUITEM "Cancella selezione",            5101
-        MENUITEM "Annulla",                        5147
-        MENUITEM "Seleziona tutto",                  5112
-        MENUITEM "Inverti selezione",                  5152
+        MENUITEM "Cancella selezione",          5101
+        MENUITEM "Annulla",                     5147
+        MENUITEM "Seleziona tutto",             5112
+        MENUITEM "Inverti selezione",           5152
         MENUITEM SEPARATOR
-        MENUITEM "Contrassegna",                        5130
+        MENUITEM "Contrassegna",                5130
     END
 END
 
@@ -352,15 +357,15 @@ CONTEXT4 MENU
 BEGIN
     POPUP "context"
     BEGIN
-        MENUITEM "Move to playing frame",       108
+        MENUITEM "Sposta a frame in riproduzione", 108
         MENUITEM SEPARATOR
-        MENUITEM "Play/Pause",                  105
-        MENUITEM "Stop",                        101
+        MENUITEM "Riproduci/Pausa",             105
+        MENUITEM "Ferma",                       101
         MENUITEM SEPARATOR
-        MENUITEM "Play selection",              107
+        MENUITEM "Riproduci selezione",         107
         MENUITEM "Loop",                        103
         MENUITEM SEPARATOR
-        POPUP "Resolution"
+        POPUP "Risoluzione"
         BEGIN
             MENUITEM "25%",                         117
             MENUITEM "50%",                         110
@@ -369,59 +374,62 @@ BEGIN
             MENUITEM "640x480",                     113
             MENUITEM "320x240",                     114
             MENUITEM "160x120",                     115
-            MENUITEM "WindowSize",                  116
+            MENUITEM "Grandezza finestra",          116
             MENUITEM SEPARATOR
-            MENUITEM "Maximize",                    109
+            MENUITEM "Massimizza",                  109
         END
     END
 END
 
-////
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
+//
 
 AVICHAIN DIALOGEX 0, 0, 321, 300
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Joint AVI Files"
+CAPTION "Unisci file AVI"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    PUSHBUTTON      "Add",32703,228,20,82,14,BS_CENTER
-    PUSHBUTTON      "Add consecutive",32707,228,36,82,14,BS_CENTER
-    PUSHBUTTON      "Delete",32704,228,52,82,14,BS_CENTER
-    PUSHBUTTON      "Delete all",32700,228,68,82,14,BS_CENTER
+    PUSHBUTTON      "Aggiungi",32703,228,20,82,14,BS_CENTER
+    PUSHBUTTON      "Aggiungi consecutivo",32707,228,36,82,14,BS_CENTER
+    PUSHBUTTON      "Cancella",32704,228,52,82,14,BS_CENTER
+    PUSHBUTTON      "Cancella tutti",32700,228,68,82,14,BS_CENTER
     PUSHBUTTON      "OK",1,228,88,82,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,228,104,82,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,228,104,82,14,BS_CENTER
     LTEXT           "Output:",-1,8,202,40,8,NOT WS_GROUP
     EDITTEXT        32104,52,200,192,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32304,248,199,32,14,BS_CENTER
-    LTEXT           "Title :",-1,12,222,28,8,NOT WS_GROUP
+    PUSHBUTTON      "Esplora",32304,248,199,32,14,BS_CENTER
+    LTEXT           "Titolo :",-1,12,222,28,8,NOT WS_GROUP
     EDITTEXT        32100,12,230,128,44,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
-    LTEXT           "Comment :",-1,144,222,38,8,NOT WS_GROUP
+    LTEXT           "Commento :",-1,144,222,38,8,NOT WS_GROUP
     EDITTEXT        32101,144,230,128,44,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
     LTEXT           "Copyright :",-1,15,280,34,8,NOT WS_GROUP
     EDITTEXT        32102,51,277,253,12,ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE
-    LTEXT           "Sources",-1,8,8,40,8,NOT WS_GROUP
+    LTEXT           "Sorgenti",-1,8,8,40,8,NOT WS_GROUP
     LISTBOX         32600,8,18,212,172,NOT LBS_NOTIFY | LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
 END
 
 AVIMIX DIALOGEX 0, 0, 300, 164
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Mux to AVI"
+CAPTION "Combina in AVI"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,172,66,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,228,66,52,14,BS_CENTER
-    LTEXT           "Image/Video",-1,8,10,44,8,NOT WS_GROUP
+    PUSHBUTTON      "Annulla",2,228,66,52,14,BS_CENTER
+    LTEXT           "Foto/Video",-1,8,10,44,8,NOT WS_GROUP
     LTEXT           "Audio",-1,8,26,44,8,NOT WS_GROUP
-    LTEXT           "Destination",-1,8,46,44,8,NOT WS_GROUP
+    LTEXT           "Destinazione",-1,8,46,44,8,NOT WS_GROUP
     EDITTEXT        32105,52,8,192,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
     EDITTEXT        32106,52,24,192,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
     EDITTEXT        32104,52,44,192,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32305,248,7,42,14,BS_CENTER
-    PUSHBUTTON      "Browse",32306,248,23,42,14,BS_CENTER
-    PUSHBUTTON      "Browse",32304,248,43,42,14,BS_CENTER
-    LTEXT           "Title :",-1,12,84,28,8,NOT WS_GROUP
+    PUSHBUTTON      "Esplora",32305,248,7,42,14,BS_CENTER
+    PUSHBUTTON      "Esplora",32306,248,23,42,14,BS_CENTER
+    PUSHBUTTON      "Esplora",32304,248,43,42,14,BS_CENTER
+    LTEXT           "Titolo:",-1,12,84,28,8,NOT WS_GROUP
     EDITTEXT        32100,12,92,128,44,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
-    LTEXT           "Comment :",-1,144,84,34,8,NOT WS_GROUP
+    LTEXT           "Commento:",-1,144,84,34,8,NOT WS_GROUP
     EDITTEXT        32101,144,92,128,44,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
     LTEXT           "Copyright :",-1,14,142,32,8,NOT WS_GROUP
     EDITTEXT        32102,52,141,228,12,ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE
@@ -429,108 +437,108 @@ END
 
 BATCH DIALOGEX 0, 0, 367, 214
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Batch export list"
+CAPTION "Lista esportazione in blocco"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    PUSHBUTTON      "Close",32713,272,164,80,14,BS_CENTER
+    PUSHBUTTON      "Chiudi",32713,272,164,80,14,BS_CENTER
     LISTBOX         32600,8,8,256,172,NOT LBS_NOTIFY | LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Move Up",32701,272,8,80,14,BS_CENTER
-    PUSHBUTTON      "Move Down",32702,272,24,80,14,BS_CENTER
-    PUSHBUTTON      "Add",32709,272,46,80,14,BS_CENTER
-    PUSHBUTTON      "Delete",32704,272,62,80,14,BS_CENTER
-    PUSHBUTTON      "Delete all",32700,272,78,80,14,BS_CENTER
-    PUSHBUTTON      "Change destination",32300,272,101,80,14,BS_CENTER
-    PUSHBUTTON      "START",32710,272,125,80,14,BS_CENTER
-    PUSHBUTTON      "Abort",32711,272,141,80,14,BS_CENTER
-    LTEXT           "On completion:",-1,10,186,60,8,NOT WS_GROUP
-    COMBOBOX        32500,71,183,112,96,CBS_DROPDOWNLIST | WS_TABSTOP
-    CONTROL         "Delete succeeded Tasks",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,184,112,12
+    PUSHBUTTON      "Sposta su",32701,272,8,80,14,BS_CENTER
+    PUSHBUTTON      "Sposta giù",32702,272,24,80,14,BS_CENTER
+    PUSHBUTTON      "Aggiungi",32709,272,46,80,14,BS_CENTER
+    PUSHBUTTON      "Rimuovi",32704,272,62,80,14,BS_CENTER
+    PUSHBUTTON      "Rimuovi tutti",32700,272,78,80,14,BS_CENTER
+    PUSHBUTTON      "Cambia destinazione",32300,272,101,80,14,BS_CENTER
+    PUSHBUTTON      "AVVIA",32710,272,125,80,14,BS_CENTER
+    PUSHBUTTON      "Annulla",32711,272,141,80,14,BS_CENTER
+    LTEXT           "Quanto attività completata:",-1,10,186,88,8,NOT WS_GROUP
+    COMBOBOX        32500,98,183,112,96,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "Elimina le attività completate",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,184,112,12
     LTEXT           "",32400,0,202,367,12,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_STATICEDGE
-    ICON            "drag",32715,-1,-1,18,21
+    ICON            "drag",32715,-1,-1,18,17
 END
 
-CODEC DIALOG 0, 0, 256, 150
+CODEC DIALOGEX 0, 0, 256, 150
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Codec settings"
-FONT 9, "Segoe UI"
+CAPTION "Impostazioni codec"
+FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,144,126,48,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,198,126,48,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,198,126,48,14,BS_CENTER
     LISTBOX         32600,8,10,128,136,LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
     LTEXT           "",32400,144,10,104,18,NOT WS_GROUP,WS_EX_STATICEDGE
-    CONTROL         "Expand to YUY2",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,32,76,12
-    CONTROL         "Encode with YUY2",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,46,76,12
-    CONTROL         "Save render settings",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,60,96,12
+    CONTROL         "Espandi a YUY2",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,32,76,12
+    CONTROL         "Codifica in YUY2",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,46,76,12
+    CONTROL         "Salva impostazioni render",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,60,96,12
 END
 
 EXOUT DIALOGEX 0, 0, 198, 62
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Config export plugins"
+CAPTION "Configurazione plugin esportatori"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    LTEXT           "Export Plugin:",-1,8,8,52,8,NOT WS_GROUP
+    LTEXT           "Plugin di esportazione:",-1,8,8,92,8,NOT WS_GROUP
     COMBOBOX        32500,8,20,128,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "OK",1,142,8,48,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,142,24,48,14,BS_CENTER
-    PUSHBUTTON      "Settings",32300,142,40,48,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,142,24,48,14,BS_CENTER
+    PUSHBUTTON      "Configurazione",32300,142,40,48,14,BS_CENTER
 END
 
-FILE_INFO DIALOGEX 0, 0, 140, 98
+FILE_INFO DIALOGEX 0, 0, 187, 98
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Change playback speed"
+CAPTION "Cambia velocità riproduzione"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    PUSHBUTTON      "OK",1,19,74,48,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,73,74,48,14,BS_CENTER
-    LTEXT           "Framerate    :",-1,10,12,41,8,NOT WS_GROUP
-    EDITTEXT        32100,64,10,56,12,ES_AUTOHSCROLL
-    LTEXT           "fps",-1,122,12,16,8,NOT WS_GROUP
+    PUSHBUTTON      "OK",1,43,74,48,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,97,74,48,14,BS_CENTER
+    EDITTEXT        32100,104,10,56,12,ES_AUTOHSCROLL
+    LTEXT           "fps",-1,162,12,16,8,NOT WS_GROUP
     LTEXT           "",32102,65,24,70,8,NOT WS_GROUP
-    LTEXT           "Sampling rate :",-1,10,44,44,8,NOT WS_GROUP
-    EDITTEXT        32101,64,42,56,12,ES_AUTOHSCROLL
-    LTEXT           "Hz",-1,122,44,16,8,NOT WS_GROUP
+    LTEXT           "Frequenza audio:",-1,10,44,89,8,NOT WS_GROUP
+    EDITTEXT        32101,104,42,56,12,ES_AUTOHSCROLL
+    LTEXT           "Hz",-1,162,44,16,8,NOT WS_GROUP
     LTEXT           "",32103,65,56,60,8,NOT WS_GROUP
+    LTEXT           "Frequenza fotogrammi:",-1,10,12,86,8,NOT WS_GROUP
 END
 
 INPUTLIST DIALOGEX 0, 0, 158, 226
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Importer plugins priority"
+CAPTION "Priorità plugin importatore"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,8,204,48,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,64,204,48,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,64,204,48,14,BS_CENTER
     LISTBOX         32600,8,8,140,172,LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Up",32701,8,184,32,14,BS_CENTER
-    PUSHBUTTON      "Down",32702,44,184,32,14,BS_CENTER
-    PUSHBUTTON      "Reset",32700,80,184,32,14,BS_CENTER
-    PUSHBUTTON      "Config",32708,116,184,32,14,BS_CENTER
-    ICON            "drag",32715,-1,-1,18,21
+    PUSHBUTTON      "Su",32701,8,184,32,14,BS_CENTER
+    PUSHBUTTON      "Giù",32702,44,184,32,14,BS_CENTER
+    PUSHBUTTON      "Reimposta",32700,80,184,32,14,BS_CENTER
+    PUSHBUTTON      "Config.",32708,116,184,32,14,BS_CENTER
+    ICON            "drag",32715,-1,-1,18,17
 END
 
 INTER DIALOGEX 0, 0, 128, 56
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Set deinterlacing"
+CAPTION "Imposta deinterlacciazione"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,8,32,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,68,32,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,68,32,52,14,BS_CENTER
     COMBOBOX        32500,8,8,112,128,CBS_DROPDOWNLIST | WS_TABSTOP
 END
 
 KEYCFGLIST DIALOGEX 0, 0, 340, 260
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Register hotkeys"
+CAPTION "Tasti di scelta rapida"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,276,220,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,276,236,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,276,236,52,14,BS_CENTER
     LISTBOX         32600,8,8,212,244,LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_TABSTOP
     LISTBOX         32602,219,8,48,244,LBS_HASSTRINGS | LBS_DISABLENOSCROLL | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
     LISTBOX         32601,276,8,56,160,LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
     CONTROL         "Shift",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,164,28,12
     CONTROL         "Ctrl",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,308,164,24,12
     CONTROL         "Alt",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,176,24,12
-    PUSHBUTTON      "Reset",32700,276,196,52,14,BS_CENTER
+    PUSHBUTTON      "Reimposta",32700,276,196,52,14,BS_CENTER
 END
 
 LANG DIALOGEX 0, 0, 256, 80
@@ -549,16 +557,16 @@ STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     LTEXT           "",1119,0,0,370,32
-    CONTROL         "Consecutive AVI",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,32,64,12
-    CONTROL         "Adjust fps",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,44,57,12
-    CONTROL         "Import as 60fps",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,56,56,12
-    CONTROL         "Import into selection",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,220,32,76,12
+    CONTROL         "AVI Consecutivo",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,32,64,12
+    CONTROL         "Sistema FPS",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,44,57,12
+    CONTROL         "Importa come 60fps",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,56,83,12
+    CONTROL         "Importa nella selezione",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,220,32,90,12
     COMBOBOX        32500,220,54,74,128,CBS_DROPDOWNLIST | WS_VSCROLL
 END
 
 MOVE DIALOGEX 0, 0, 74, 30
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Move to:"
+CAPTION "Sposta a:"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     EDITTEXT        32000,8,8,58,12
@@ -566,31 +574,31 @@ END
 
 PRIORITYLIST DIALOGEX 0, 0, 128, 226
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Filter order"
+CAPTION "Ordine dei filtri"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,8,204,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,68,204,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,68,204,52,14,BS_CENTER
     LISTBOX         32600,8,8,112,172,NOT LBS_NOTIFY | LBS_HASSTRINGS | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Up",32701,8,184,36,14,BS_CENTER
-    PUSHBUTTON      "Down",32702,48,184,36,14,BS_CENTER
-    PUSHBUTTON      "Reset",32700,88,184,32,14,BS_CENTER
-    ICON            "drag",32715,-1,-1,18,21
+    PUSHBUTTON      "Sposta su",32701,8,184,36,14,BS_CENTER
+    PUSHBUTTON      "Sposta giù",32702,48,184,36,14,BS_CENTER
+    PUSHBUTTON      "Reimposta",32700,88,184,32,14,BS_CENTER
+    ICON            "drag",32715,-1,-1,18,17
 END
 
 SAVE_EXINFO DIALOGEX 0, 0, 298, 104
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Ex.info"
+CAPTION "Info esportazione"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    LTEXT           "Title:",32402,7,7,28,8,NOT WS_GROUP
+    LTEXT           "Titolo:",32402,7,7,28,8,NOT WS_GROUP
     EDITTEXT        32100,7,15,140,46,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
-    LTEXT           "Comment:",32403,150,7,36,8,NOT WS_GROUP
+    LTEXT           "Commento:",32403,150,7,36,8,NOT WS_GROUP
     EDITTEXT        32101,150,15,140,46,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,WS_EX_CLIENTEDGE
     LTEXT           "Copyright:",32404,7,67,37,8,NOT WS_GROUP
     EDITTEXT        32102,45,65,245,12,ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE
     PUSHBUTTON      "OK",1,181,83,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,238,83,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,238,83,52,14,BS_CENTER
 END
 
 SAVE_OPTION DIALOGEX 0, 0, 370, 112
@@ -599,44 +607,44 @@ FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     LTEXT           "",1119,0,0,370,32
     LTEXT           "",32406,68,33,242,12,SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
-    PUSHBUTTON      "Queue Task",32302,316,32,50,14,BS_CENTER
-    PUSHBUTTON      "Video encoding",32300,67,52,52,16,BS_CENTER
+    PUSHBUTTON      "Metti in coda",32302,316,32,50,14,BS_CENTER
+    PUSHBUTTON      "Codifica video",32300,67,52,52,16,BS_CENTER
     CONTROL         "",32400,"Static",SS_LEFTNOWORDWRAP,127,56,180,10
     CONTROL         "",-1,"Static",SS_ETCHEDFRAME,123,52,188,16
-    PUSHBUTTON      "Audio encoding",32301,67,72,52,16,BS_CENTER
+    PUSHBUTTON      "Codifica audio",32301,67,72,52,16,BS_CENTER
     CONTROL         "",32401,"Static",SS_LEFTNOWORDWRAP,127,76,180,10
     CONTROL         "",-1,"Static",SS_ETCHEDFRAME,123,72,188,16
-    CONTROL         "Direct copy",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,54,44,12
-    CONTROL         "Direct copy",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,70,44,10
-    CONTROL         "No sound",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,80,44,10
-    LTEXT           "Interleave:",-1,68,97,31,8,NOT WS_GROUP
+    CONTROL         "Copia diretta",32200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,54,51,12
+    CONTROL         "Copia diretta",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,70,48,10
+    CONTROL         "Niente audio",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,80,48,10
+    LTEXT           "Intercalazione:",-1,68,97,50,8,NOT WS_GROUP
     EDITTEXT        32000,123,95,16,12,ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE | WS_EX_RIGHT
     LTEXT           "Frames",-1,140,97,26,8,NOT WS_GROUP
-    CONTROL         "Save audio to WAV",32204,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,95,80,12
-    CONTROL         "Save log",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,95,40,12
-    PUSHBUTTON      "Ex.info",32303,315,95,24,12,BS_CENTER
+    CONTROL         "Salva audio come WAV",32204,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,95,80,12
+    CONTROL         "Salva log",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,95,40,12
+    PUSHBUTTON      "Info esportazione",32303,308,95,60,12,BS_CENTER
 END
 
 SELECT DIALOGEX 0, 0, 136, 72
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Set selection"
+CAPTION "Imposta selezione"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,12,48,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,72,48,52,14,BS_CENTER
-    LTEXT           "Starting frame",-1,12,12,56,12,NOT WS_GROUP
+    PUSHBUTTON      "Annulla",2,72,48,52,14,BS_CENTER
+    LTEXT           "Frame iniziale",-1,12,12,56,12,NOT WS_GROUP
     EDITTEXT        32000,72,10,52,12
-    LTEXT           "Ending frame",-1,12,28,56,8,NOT WS_GROUP
+    LTEXT           "Frame finale",-1,12,28,56,8,NOT WS_GROUP
     EDITTEXT        32001,72,26,52,12
 END
 
 SIZE DIALOGEX 0, 0, 128, 56
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Set resolution"
+CAPTION "Imposta risoluzione"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,8,32,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,68,32,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,68,32,52,14,BS_CENTER
     LTEXT           "X",-1,12,12,8,8,NOT WS_GROUP
     EDITTEXT        32000,20,10,36,12
     LTEXT           "Y",-1,68,12,8,8,NOT WS_GROUP
@@ -645,7 +653,7 @@ END
 
 STRINGS DIALOGEX 0, 0, 272, 30
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "New profile name"
+CAPTION "Nuovo profilo"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     EDITTEXT        32100,8,8,256,12
@@ -653,99 +661,106 @@ END
 
 SYSTEM DIALOGEX 0, 0, 279, 456
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "System settings"
+CAPTION "Preferenze di sistema"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,75,434,48,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,135,434,48,14,BS_CENTER
-    LTEXT           "Max resolution",-1,8,8,52,8,NOT WS_GROUP
+    PUSHBUTTON      "Annulla",2,135,434,48,14,BS_CENTER
+    LTEXT           "Risoluzione massima",-1,8,8,73,8,NOT WS_GROUP
     LTEXT           "W",-1,84,8,8,8,NOT WS_GROUP
     EDITTEXT        32000,92,5,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
     LTEXT           "H",-1,143,8,14,8,NOT WS_GROUP
     EDITTEXT        32001,156,5,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
     LTEXT           "Max frame count",-1,8,20,56,8,NOT WS_GROUP
     EDITTEXT        32002,92,17,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "Frames to cache",-1,8,32,64,8,NOT WS_GROUP
+    LTEXT           "Frame in cache",-1,8,32,64,8,NOT WS_GROUP
     EDITTEXT        32003,92,29,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "Presets for resize",-1,8,44,84,8,NOT WS_GROUP
-    EDITTEXT        32103,92,41,156,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    CONTROL         "Cache plugin and codec info",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,56,148,12
-    CONTROL         "Keep encode settings in profile",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,68,120,12
-    CONTROL         "Frame number Starts from 1",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,80,116,12
-    CONTROL         "Enable SHIFT-move for selection",32204,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,92,208,12
-    CONTROL         "Use main window for playback preview",32223,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,104,192,12
-    CONTROL         "YUY2 filter mode (disable filter plugins)",32205,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,116,192,12
-    CONTROL         "Enable LargeAddressAware",32216,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,128,168,12
-    LTEXT           "*Needs a restart to take effect",-1,8,143,184,8,NOT WS_GROUP
+    LTEXT           "Preset di ridimensionamento",-1,8,44,100,8,NOT WS_GROUP
+    EDITTEXT        32103,99,41,164,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    CONTROL         "Salvataggio in cache di plugin e informazioni sui codec",32202,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,56,186,12
+    CONTROL         "Salva impostazioni di encoding nel profilo",32201,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,68,157,12
+    CONTROL         "Numero di frame inizia da 1",32203,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,80,116,12
+    CONTROL         "Abilita SHIFT per spostare la selezione",32204,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,92,208,12
+    CONTROL         "Usa finestra principale per l’anteprima",32223,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,104,192,12
+    CONTROL         "Modalità filtro YUY2 (disattiva plugin filtro)",32205,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,116,192,12
+    CONTROL         "Abilita LargeAddressAware",32216,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,128,168,12
+    LTEXT           "*Riavvio per rendere effettivo",-1,8,143,184,8,NOT WS_GROUP
     CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,157,248,2
-    LTEXT           "Custom move",-1,8,166,64,8,NOT WS_GROUP
-    LTEXT           "A",-1,85,166,8,8,NOT WS_GROUP
-    EDITTEXT        32005,92,163,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "B",-1,126,166,8,8,NOT WS_GROUP
-    EDITTEXT        32006,133,163,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "C",-1,168,166,8,8,NOT WS_GROUP
-    EDITTEXT        32007,175,163,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "D",-1,209,166,8,8,NOT WS_GROUP
-    EDITTEXT        32008,216,163,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "Presets for fps conversion",-1,8,178,84,8,NOT WS_GROUP
-    EDITTEXT        32104,92,175,156,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    LTEXT           "Default output filename",-1,8,190,84,8,NOT WS_GROUP
-    EDITTEXT        32101,92,187,136,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32301,229,187,32,12,BS_CENTER
-    LTEXT           "Sound on export complete",-1,8,202,81,8,NOT WS_GROUP
-    EDITTEXT        32102,92,199,136,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32302,229,199,32,12,BS_CENTER
-    LTEXT           "Threads for video(0=auto)",-1,8,214,100,8,NOT WS_GROUP
-    EDITTEXT        32010,112,211,25,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    CONTROL         "Assign to specific CPU",32217,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,212,83,11
-    LTEXT           "Writing block size",-1,8,226,92,8,NOT WS_GROUP
-    EDITTEXT        32009,112,223,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "KByte",-1,161,226,23,8,NOT WS_GROUP
-    CONTROL         "Enable SSE",32206,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,238,60,12
-    CONTROL         "Enable SSE2",32207,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,238,60,12
-    CONTROL         "Register aviutl.vfp in VFPlugin",32208,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,250,100,12
-    CONTROL         "[Open] can also open Project File",32219,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,262,188,12
-    CONTROL         "Normalize to Y:16-235,UV:16-240 for YUY2 Conversion",32214,
+    LTEXT           "Spostamento personalizzato",-1,8,166,86,8,NOT WS_GROUP
+    LTEXT           "A",-1,103,165,8,8,NOT WS_GROUP
+    EDITTEXT        32005,110,162,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    LTEXT           "B",-1,144,165,8,8,NOT WS_GROUP
+    EDITTEXT        32006,151,162,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    LTEXT           "C",-1,186,165,8,8,NOT WS_GROUP
+    EDITTEXT        32007,193,162,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    LTEXT           "D",-1,227,165,8,8,NOT WS_GROUP
+    EDITTEXT        32008,234,162,32,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    LTEXT           "Preimpostazioni per la conversione FPS",-1,8,178,120,8,NOT WS_GROUP
+    EDITTEXT        32104,144,175,121,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    LTEXT           "Nome file di output predefinito",-1,8,190,84,8,NOT WS_GROUP
+    EDITTEXT        32101,96,187,136,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Browse",32301,233,187,32,12,BS_CENTER
+    LTEXT           "Suono al termine dell'esportazione",-1,8,202,113,8,NOT WS_GROUP
+    EDITTEXT        32102,119,199,113,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Browse",32302,233,199,32,12,BS_CENTER
+    LTEXT           "Thread per il video (0=automatico)",-1,8,214,108,8,NOT WS_GROUP
+    EDITTEXT        32010,119,211,25,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    CONTROL         "Assegna a una CPU specifica",32217,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,212,106,11
+    LTEXT           "Dimensione blocco di scrittura",-1,8,226,92,8,NOT WS_GROUP
+    EDITTEXT        32009,119,222,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    LTEXT           "KByte",-1,169,223,23,8,NOT WS_GROUP
+    CONTROL         "Abilita SSE",32206,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,238,60,12
+    CONTROL         "Abilita SSE2",32207,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,238,60,12
+    CONTROL         "Registra aviutl.vfp in VFPlugin",32208,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,250,100,12
+    CONTROL         "[Apri] può aprire anche i file progetto",32219,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,262,188,12
+    CONTROL         "Normalizza Y:16-235 e UV:16-240 per la conversione YUY2",32214,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,274,183,12
-    CONTROL         "Enable editing resume",32209,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,286,100,12
-    CONTROL         "Do not confirm overwrite",32215,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,298,136,12
-    CONTROL         "Open file selection dialog on drag-and-drop",32218,
+    CONTROL         "Abilita ripristino della sessione di modifica",32209,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,286,164,12
+    CONTROL         "Non chiedere conferma per la sovrascrittura",32215,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,298,153,12
+    CONTROL         "Apri la finestra di selezione file durante il trascinamento",32218,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,310,188,12
-    CONTROL         "Make window active on drag-and-drop",32224,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,322,200,12
-    CONTROL         "Show confirmation dialog on closing file",32220,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,334,172,12
-    CONTROL         "Do not change fps for appended files",32210,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,346,144,12
-    CONTROL         "Copy profile to temp profile for use on loading",32211,
+    CONTROL         "Attiva la finestra durante il trascinamento",32224,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,322,200,12
+    CONTROL         "Mostra una finestra di conferma alla chiusura del file",32220,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,334,172,12
+    CONTROL         "Non modificare gli FPS dei file aggiunti",32210,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,346,144,12
+    CONTROL         "Copia il profilo nel profilo temporaneo al caricamento",32211,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,358,192,12
-    CONTROL         "Convert fps to 29.97 when Loading files close to such value",32212,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,370,192,12
-    CONTROL         "Auto adjust fps when length of video and audio differ by 0.1s or more",32213,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,382,244,12
-    CONTROL         "Apply current profile settings on loading project",32221,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,394,184,12
-    CONTROL         "Snap to windows",32222,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,406,128,12
-    CONTROL         "Move slider by single click",32225,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,418,140,12
+    CONTROL         "Converti gli FPS a 29,97 quando il valore è vicino a tale frequenza",32212,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,370,213,12
+    CONTROL         "Regola automaticamente gli FPS se video e audio differiscono di almeno 0,1 s.",32213,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,382,263,12
+    CONTROL         "Applica le impostazioni del profilo corrente al caricamento del progetto",32221,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,394,232,12
+    CONTROL         "Aggancia alle finestre",32222,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,406,128,12
+    CONTROL         "Sposta il cursore con un solo clic",32225,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,418,140,12
 END
 
 VCMSET DIALOGEX 0, 0, 204, 96
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Video compression"
+CAPTION "Compressione video"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
-    LTEXT           "Encoder:",-1,8,8,52,8,NOT WS_GROUP
+    LTEXT           "Codificatore:",-1,8,8,52,8,NOT WS_GROUP
     COMBOBOX        32500,8,19,128,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Quality (0-100)",-1,9,43,64,8,NOT WS_GROUP
+    LTEXT           "Qualità (0-100)",-1,9,43,64,8,NOT WS_GROUP
     EDITTEXT        32000,73,40,24,12,0,WS_EX_CLIENTEDGE
     LTEXT           "Keyframe per",-1,9,59,64,8,NOT WS_GROUP
     EDITTEXT        32001,53,56,26,12,0,WS_EX_CLIENTEDGE
-    LTEXT           "Frames (0:Auto)",-1,81,59,57,8,NOT WS_GROUP
+    LTEXT           "Frame (0:Auto)",-1,81,59,57,8,NOT WS_GROUP
     LTEXT           "Data rate (0:Auto)",-1,9,75,60,8,NOT WS_GROUP
     EDITTEXT        32002,73,72,24,12,0,WS_EX_CLIENTEDGE
     LTEXT           "KB/s",-1,98,75,24,8,NOT WS_GROUP
     PUSHBUTTON      "OK",1,144,8,50,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,144,24,50,14,BS_CENTER
-    PUSHBUTTON      "Settings",32300,144,40,50,14,BS_CENTER
-    PUSHBUTTON      "Reset",32301,144,56,50,14,BS_CENTER
-    PUSHBUTTON      "Version Info",32302,144,72,50,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,144,24,50,14,BS_CENTER
+    PUSHBUTTON      "Preferenze",32300,144,40,50,14,BS_CENTER
+    PUSHBUTTON      "Reimposta",32301,144,56,50,14,BS_CENTER
+    PUSHBUTTON      "Info versione",32302,144,72,50,14,BS_CENTER
 END
 
 WAV_OPTION DIALOGEX 0, 0, 188, 55
@@ -754,90 +769,293 @@ CAPTION "WaveFileReader"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,39,31,50,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,100,31,50,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,100,31,50,14,BS_CENTER
     EDITTEXT        32000,105,8,32,12,ES_NUMBER,WS_EX_CLIENTEDGE
     EDITTEXT        32001,147,7,32,12,ES_NUMBER,WS_EX_CLIENTEDGE
     LTEXT           "x",-1,140,11,6,8,NOT WS_GROUP
-    LTEXT           "Resolution when importing as video:",-1,8,4,96,15,NOT WS_GROUP
+    LTEXT           "Risoluzione quando si importa come video",-1,8,7,96,15,NOT WS_GROUP
 END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "AVICHAIN", DIALOG
+    BEGIN
+    END
+
+    "AVIMIX", DIALOG
+    BEGIN
+    END
+
+    "BATCH", DIALOG
+    BEGIN
+    END
+
+    "CODEC", DIALOG
+    BEGIN
+    END
+
+    "EXOUT", DIALOG
+    BEGIN
+    END
+
+    "FILE_INFO", DIALOG
+    BEGIN
+        RIGHTMARGIN, 140
+    END
+
+    "INPUTLIST", DIALOG
+    BEGIN
+    END
+
+    "INTER", DIALOG
+    BEGIN
+    END
+
+    "KEYCFGLIST", DIALOG
+    BEGIN
+    END
+
+    "LANG", DIALOG
+    BEGIN
+    END
+
+    "LOAD_OPTION", DIALOG
+    BEGIN
+    END
+
+    "MOVE", DIALOG
+    BEGIN
+    END
+
+    "PRIORITYLIST", DIALOG
+    BEGIN
+    END
+
+    "SAVE_EXINFO", DIALOG
+    BEGIN
+    END
+
+    "SAVE_OPTION", DIALOG
+    BEGIN
+    END
+
+    "SELECT", DIALOG
+    BEGIN
+    END
+
+    "SIZE", DIALOG
+    BEGIN
+    END
+
+    "STRINGS", DIALOG
+    BEGIN
+    END
+
+    "SYSTEM", DIALOG
+    BEGIN
+    END
+
+    "VCMSET", DIALOG
+    BEGIN
+    END
+
+    "WAV_OPTION", DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+AVIMIX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+FILE_INFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+BATCH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+CODEC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+EXOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+INPUTLIST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+LOAD_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+MOVE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+PRIORITYLIST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SAVE_EXINFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SAVE_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SYSTEM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+STRINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SELECT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+VCMSET AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+WAV_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
 
 STRINGTABLE
 BEGIN
     0                       "Italiano"
     1                       "Italiano per v1.00, og: Maverick Tse, sykhro, it: Redlean"
-    10                      "Default"
+    10                      "Predefinito"
     11                      "Auto"
-    12                      "None"
+    12                      "Nessuno"
     13                      "sec"
     14                      "min"
     15                      "hr"
+END
 
-    16                      "Deinterlace"
-    17                      "Odd"
-    18                      "Even"
+STRINGTABLE
+BEGIN
+    16                      "Deinterlaccia"
+    17                      "Dispari"
+    18                      "Pari"
     19                      "Bob"
     21                      "Auto"
     22                      "Auto 24fps"
-    23                      "Standard"
-    24                      "Invert"
-    25                      "Period"
-    26                      "Unknown"
-    27                      "Exporting"
-    28                      "Estimating"
-    29                      "Searching"
-    30                      "Remaining"
-    31                      "Not recompressible"
+    23                      "Predefinito"
+    24                      "Inverti"
+    25                      "Periodo"
+    26                      "Sconosciuto"
+    27                      "Esportazione"
+    28                      "Stima in corso"
+    29                      "Ricerca in corso"
+    30                      "Rimanente"
+    31                      "Non ricomprimibile"
+END
 
-    32                      "Not compressed"
-    33                      "No fps change"
-    34                      "Resolution"
-    35                      "Time lapsed"
-    36                      "Framerate"
-    37                      "Frame count"
-    38                      "Video Compression"
-    39                      "Sampling rate"
-    40                      "Channels"
-    41                      "Audio format"
-    42                      "Strength"
-    43                      "Range"
-    44                      "Threshold"
+STRINGTABLE
+BEGIN
+    32                      "Non compresso"
+    33                      "Nessun cambio di FPS"
+    34                      "Risoluzione"
+    35                      "Tempo trascorso"
+    36                      "Frequenza fotogrammi"
+    37                      "Quantità fotogrammi"
+    38                      "Compressione video"
+    39                      "Frequenza audio"
+    40                      "Canali"
+    41                      "Formato audio"
+    42                      "Forza"
+    43                      "Intervallo"
+    44                      "Soglia"
     45                      "LowLimit"
     46                      "UpLimit"
+END
 
-    49                      "Top"
-    50                      "Bottom"
-    51                      "Left"
-    52                      "Right"
-    53                      "Brightness"
-    54                      "Contrast"
-    55                      "Luminance"
+STRINGTABLE
+BEGIN
+    49                      "Sopra"
+    50                      "Sotto"
+    51                      "Sinistra"
+    52                      "Destra"
+    53                      "Luminosità"
+    54                      "Contrasto"
+    55                      "Luminanza"
     56                      "Gamma"
-    57                      "Saturation"
-    58                      "Tone"
-    59                      "Level"
-    60                      "Normalize volume"
-    61                      "Blur"
-    62                      "Clipping and Resize"
-    63                      "Keep aspect ratio"
+    57                      "Saturazione"
+    58                      "Tono"
+    59                      "Livello"
+    60                      "Normalizza volume"
+    61                      "Sfocatura"
+    62                      "Ritaglia e ridimensiona"
+    63                      "Mantieni proporzioni"
+END
 
-    64                      "Fit to original size"
-    66                      "Color correction"
-    67                      "Advanced color correction"
-    68                      "TV → PC conversion"
-    69                      "Sync RGB"
-    73                      "Histogram"
-    74                      "Deinterlace"
-    75                      "Auto 24fps Deinterlace"
-    76                      "Deinterlace pixels"
-    77                      "Show image"
-    78                      "Auto Dein"
-    79                      "Motion"
+STRINGTABLE
+BEGIN
+    64                      "Adatta alle dimensioni originali"
+    66                      "Correzione colore"
+    67                      "Correzione colore avanzata"
+    68                      "Conversione da TV a PC"
+    69                      "Sincronizza RGB"
+    73                      "Istogramma"
+    74                      "Deinterlaccia"
+    75                      "Deinterlacciazione automatica 24fps"
+    76                      "Deinterlaccia pixel"
+    77                      "Mostra immagine"
+    78                      "Auto deinterlacciazione"
+    79                      "Movimento"
+END
 
+STRINGTABLE
+BEGIN
     80                      "Bob"
-    81                      "Odd/Even"
-    82                      "Spatial interpolation"
-    83                      "Adaptive interpolation"
-    84                      "Interleave"
+    81                      "Dispari/Pari"
+    82                      "Interpolazione spaziale"
+    83                      "Interpolazione adattiva"
+    84                      "Interlacciamento"
     85                      "0.5s"
     86                      "1s"
     87                      "2s"
@@ -845,104 +1063,131 @@ BEGIN
     89                      "2 frame"
     90                      "5 frame"
     91                      "10 frame"
-    92                      "Set frame"
-    93                      "Navigation window"
-    94                      "Denoise"
-    95                      "Denoise (temporal)"
+    92                      "Imposta frame"
+    93                      "Finestra di navigazione"
+    94                      "Riduzione rumore"
+    95                      "Riduzione rumore (temporale)"
+END
 
-    96                      "Playback window"
-    97                      "Change framerate"
-    98                      "Framerate settings"
-    99                      "Use Auto 24fps for 24fps←30fps conversion"
-    100                     "Change size"
-    101                     "Set size"
-    102                     "Sharpening"
-    105                     "Consecutive BmpFile (*.bmp)|*.bmp"
-    106                     "Tool window"
+STRINGTABLE
+BEGIN
+    96                      "Finestra di anteprima"
+    97                      "Cambia frequenza fotogrammi"
+    98                      "Impostazioni frequenza di fotogrammi"
+    99                      "Usa Auto 24 fps per la conversione 24 fps ? 30 fps"
+    100                     "Cambia risoluzione"
+    101                     "Imposta risoluzione"
+    102                     "Nitidezza"
+    105                     "File BMP consecutivi (*.bmp)|*.bmp"
+    106                     "Finestra strumenti"
     107                     "..."
     108                     " "
-    109                     "Field order"
-    110                     "Bottom → Top"
-    111                     "Top → Bottom"
+    109                     "Ordine campi"
+    110                     "Dal basso ? in alto"
+    111                     "In alto  ? in basso"
+END
 
-    112                     "File control"
-    113                     "Video decompress format"
-    114                     "Volume level"
+STRINGTABLE
+BEGIN
+    112                     "Controllo file"
+    113                     "Formato decompressione video"
+    114                     "Livello volume"
     115                     "Audio shift"
-    116                     "Pos"
-    122                     "Fill border"
-    123                     "with Black"
-    124                     "with Edge color"
-    125                     "PC → TV conversion"
+    116                     "Posizione"
+    122                     "Riempi bordo"
+    123                     "con nero"
+    124                     "con il colore del bordo"
+    125                     "Conversione PC ? TV"
+END
 
-    128                     "Place at center"
-    129                     "Do nothing"
-    130                     "Shutdown"
-    131                     "Hibernate"
-    132                     "Suspend"
-    133                     "Close AviUtl"
-    134                     "Batch export list"
-    135                     "[Export filename not set]"
-    136                     "Color conversion..."
-    137                     "[ Import ]"
-    138                     "[ Export ]"
-    139                     "Append"
-    140                     "Import Audio"
-    141                     "[Project] Open"
-    142                     "[Project] Save New"
-    143                     "Export as AVI"
+STRINGTABLE
+BEGIN
+    128                     "Piazza al centro"
+    129                     "Fai nulla"
+    130                     "Arresta"
+    131                     "Ibernazione"
+    132                     "Sospendi"
+    133                     "Chiudi AviUtl"
+    134                     "Esportazione in blocco"
+    135                     "[Nome file dell'esportazione non impostato]"
+    136                     "Conversione colore..."
+    137                     "[ Importa ]"
+    138                     "[ Esporta ]"
+    139                     "Aggiungi"
+    140                     "Importa audio"
+    141                     "[Progetto] Apri"
+    142                     "[Progetto] Salva come"
+    143                     "Esporta come AVI"
+END
 
-    144                     "Export as WAV"
-    145                     "Close AviUtl and Hibernate"
-    146                     "Close AviUtl and Suspend"
+STRINGTABLE
+BEGIN
+    144                     "Esporta come WAV"
+    145                     "Chiudi AviUtl e manda in ibernazione"
+    146                     "Chiudi AviUtl e sospendi"
+END
 
-    1000                    "Failed reading file."
-    1001                    "Failed writing to file. \n\nDisk space may be running out\n or file size is too large for filesystem."
-    1002                    "Failed to create file."
-    1003                    "File format not supported."
-    1004                    "Files missing or have changed. \nSpecify another file?"
-    1005                    "Only a max of %d files can be read at once."
-    1006                    "Cannot edit file with resolution exceeding %dx%d. \n\nMax editable resolution can be changed in SYSTEM SETTINGS"
-    1007                    "Cannot edit file smaller than %dx%d."
+STRINGTABLE
+BEGIN
+    1000                    "Errore nella lettura del file."
+    1001                    "Errore durante la scrittura del file.\n\nLo spazio su disco potrebbe essere insufficiente\noppure la dimensione del file è troppo grande per il filesystem."
+    1002                    "Errore durante la creazione del file."
+    1003                    "Formato file non supportato."
+    1004                    "File cambiato o mancante. \nSpecificare un altro file?"
+    1005                    "Solo un massimo di %d file possono essere letti allo stesso tempo."
+    1006                    "Impossibile modificare file con risoluzione superiore a %dx%d.\n\nLa risoluzione massima modificabile può essere cambiata nelle impostazioni di sistema."
+    1007                    "Impossibile modificare file più piccolo di %dx%d."
+END
 
-    1008                    "Max editable frame count is %d.\n\nSuch value can be changed in SYSTEM SETTINGS"
-    1009                    "There are frames needing to be recompressed. Proceed?\n\n *Frame %d%s"
-    1010                    "Batch list can only hold a max of %d items."
-    1011                    " has wrong image format"
-    1012                    " has wrong resolution"
-    1013                    " is not preceeded by keyframe"
-    1014                    " is being load with 60fps mode"
-    1015                    "Cannot overwrite to files being edited."
-    1016                    "Failed initializing video compression.\n\nThe video codec may require the resolution\nto be a multiple of certain integer."
-    1017                    "Failed initializing audio compression.\n\nThe codec may be unusable."
-    1018                    "Abort Export?"
-    1019                    "Abort Search?"
-    1020                    " does not exists."
-    1021                    " is not being used."
-    1022                    "The following characters cannot be used in profile name. \n\n%s"
-    1023                    "Cannot overwrite imported file."
+STRINGTABLE
+BEGIN
+    1008                    "Numero massimo di frame modificabili: %d.\n\nQuesto valore può essere modificato nelle impostazioni di sistema."
+    1009                    "Ci sono fotogrammi che devono essere ricompressi. Procedere?\n\n *Fotogramma %d%s"
+    1010                    "La lista batch può contenere al massimo %d elementi."
+    1011                    " ha un formato immagine sbagliato"
+    1012                    " ha una risoluzione sbagliata"
+    1013                    " non è preceduto da fotogramma"
+    1014                    " sta essendo caricato in modalità 60FPS"
+    1015                    "Impossibile sovrascrivere ai file mentre si modifica."
+    1016                    "Inizializzazione della compressione video non riuscita.\n\nIl codec video potrebbe richiedere che la risoluzione\nsia un multiplo di un determinato valore intero."
+    1017                    "Inizializzazione della compressione audio non riuscita.\n\nIl codec potrebbe essere inutilizzabile."
+    1018                    "Annullare l'esportazione?"
+    1019                    "Annullare la ricerca?"
+    1020                    " non esiste."
+    1021                    " non sta essendo usato."
+    1022                    "I caratteri seguenti non possono esere usati nel nome del profilo \n\n%s"
+    1023                    "Impossibile sovrascrivere file importato"
+END
 
-    1024                    "Only a max of %d files can be joint."
-    1025                    "A proper file may not be produced without recompression. Proceed?"
-    1026                    "Missing export plugin"
+STRINGTABLE
+BEGIN
+    1024                    "È possibile unire al massimo %d file."
+    1025                    "Potrebbe non essere possibile ottenere un file valido senza ricompressione. Procedere?"
+    1026                    "Plugin di esportazione mancante."
     1028                    "Informazioni file"
-    1029                    "Filter plugins"
-    1030                    "Import plugins"
-    1031                    "Export plugins"
+    1029                    "Plugin filtri"
+    1030                    "Plugin di importazione"
+    1031                    "Plugin di esportazione"
     1032                    "Informazioni overlay"
     1033                    "Informazioni versione"
     1034                    "Informazioni lingue"
     1035                    "Memoria insufficiente"
-    1036                    "Some items failed during batch export."
-    1037                    "Delete all?"
-    1038                    "Failed importing file.\n\nFile format is either not supported or\nthe relevant codec or plugin\nis not being registered."
-    1039                    "File export failed."
-
-    1040                    "Press [START] to begin batch export"
-    1041                    "All tasks completed normally"
-    1042                    """%s"" is being exported"
-    1043                    "Waiting export from other process to finish"
-    1044                    "Color conversion plugin info"
-    1045                    "The same shortcut key is being assigned to multiple operations\n\n%s\n%s\n"
-    1046                    "Discard editing data?"
+    1036                    "Alcuni elementi non sono riusciti durante l’esportazione in blocco."
+    1037                    "Cancella tutto?"
+    1038                    "Importazione del file non riuscita.\n\nIl formato del file non è supportato oppure\nil codec o plugin necessario\nnon è registrato."
+    1039                    "Esportazione file fallita."
 END
+
+STRINGTABLE
+BEGIN
+    1040                    "Premi [AVVIA] per iniziare esportazione in blocco"
+    1041                    "Tutte le operazioni sono state completate correttamente."
+    1042                    """%s"" in fase di esportazione"
+    1043                    "In attesa del completamento dell’esportazione da un altro processo."
+    1044                    "Info plugin di conversione colore"
+    1045                    "Lo stesso tasto di scelta rapida è assegnato a più operazioni\n\n%s\n%s"
+    1046                    "Scartare i dati di modifica?"
+END
+
+
+
