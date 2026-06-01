@@ -22,7 +22,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Esporta come AVI (Ctrl+S)",   1003
         MENUITEM "Esporta come WAV",            1062
-        POPUP "Esporta con plugin Plugin"
+        POPUP "Esporta con plugin"
         BEGIN
             MENUITEM "",                            5395
         END
