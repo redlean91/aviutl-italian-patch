@@ -171,12 +171,12 @@ BEGIN
             MENUITEM "Vai alla fine della selezione", 5104
             MENUITEM "Prossimo keyframe",           5174
             MENUITEM "Keyframe precedente",         5175
-            MENUITEM "Next marked frame",           5178
-            MENUITEM "Prev marked frame",           5179
-            MENUITEM "Next frame with different profile", 5176
-            MENUITEM "Prev frame with different profile", 5177
-            MENUITEM "Next discontinous frame",     5170
-            MENUITEM "Prev discontinous frame",     5171
+            MENUITEM "Prossimo keyframe marcato",           5178
+            MENUITEM "Anteprima keyframe marcato",           5179
+            MENUITEM "Prossimo frame con profilo diverso", 5176
+            MENUITEM "Anteprima frame con profilo diverso", 5177
+            MENUITEM "Prossimo frame discontinuo",  5170
+            MENUITEM "Frame discontinuo precedente", 5171
             MENUITEM "Next A (PageDown)",           5187
             MENUITEM "Prev A (PageUp)",             5188
             MENUITEM "Next B",                      5189
@@ -185,8 +185,8 @@ BEGIN
             MENUITEM "Prev C",                      5192
             MENUITEM "Next D",                      5193
             MENUITEM "Prev D",                      5194
-            MENUITEM "Preview from current frame in playback window", 1099
-            MENUITEM "Copy frame number to clipboard", 1090
+            MENUITEM "Anteprima dal frame corrente nella finestra di riproduzione", 1099
+            MENUITEM "Copia il numero di frame negli appunti", 1090
         END
     END
     POPUP "Profilo"
@@ -232,11 +232,11 @@ BEGIN
     POPUP "Informazioni"
     BEGIN
         MENUITEM "Info sul file",               1006
-        MENUITEM "Activated overlays",          104
-        MENUITEM "Filter plugins",              101
+        MENUITEM "Overlay attivati",             104
+        MENUITEM "Plugin filtri",                101
         MENUITEM "Plugin di importazione",      103
         MENUITEM "Plugin di esportazione",      105
-        MENUITEM "Color conversion plugins",    110
+        MENUITEM "Plugin di conversione colore", 110
         MENUITEM "Patch delle lingue",          107
         MENUITEM SEPARATOR
         MENUITEM "Versione",                    100
@@ -248,12 +248,12 @@ BEGIN
     POPUP "Riproduzione"
     BEGIN
         MENUITEM "Riproduci/Pausa",             105
-        MENUITEM "Stop",                        101
+        MENUITEM "Ferma",                       101
         MENUITEM SEPARATOR
         MENUITEM "Selezione riproduzione",      107
         MENUITEM "Loop",                        103
     END
-    POPUP "Display"
+    POPUP "Visualizzazione"
     BEGIN
         POPUP "Risoluzione"
         BEGIN
@@ -276,7 +276,7 @@ END
 
 HIST MENU
 BEGIN
-    POPUP "Display"
+    POPUP "Visualizzazione"
     BEGIN
         MENUITEM "RGB",                         100
         MENUITEM "YCbCr",                       101
@@ -547,7 +547,7 @@ CAPTION "Lingua"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "OK",1,74,32,52,14,BS_CENTER
-    PUSHBUTTON      "Cancel",2,130,32,52,14,BS_CENTER
+    PUSHBUTTON      "Annulla",2,130,32,52,14,BS_CENTER
     COMBOBOX        32500,8,8,240,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "*Effettivo dopo un riavvio",-1,16,55,96,16,NOT WS_GROUP
 END
@@ -619,7 +619,7 @@ BEGIN
     CONTROL         "Niente audio",32201,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,80,48,10
     LTEXT           "Intercalazione:",-1,68,97,50,8,NOT WS_GROUP
     EDITTEXT        32000,123,95,16,12,ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE | WS_EX_RIGHT
-    LTEXT           "Frames",-1,140,97,26,8,NOT WS_GROUP
+    LTEXT           "Frame",-1,140,97,26,8,NOT WS_GROUP
     CONTROL         "Salva audio come WAV",32204,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,95,80,12
     CONTROL         "Salva log",32202,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,95,40,12
     PUSHBUTTON      "Info esportazione",32303,308,95,60,12,BS_CENTER
@@ -671,7 +671,7 @@ BEGIN
     EDITTEXT        32000,92,5,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
     LTEXT           "H",-1,143,8,14,8,NOT WS_GROUP
     EDITTEXT        32001,156,5,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
-    LTEXT           "Max frame count",-1,8,20,56,8,NOT WS_GROUP
+    LTEXT           "Numero massimo di frame",-1,8,20,56,8,NOT WS_GROUP
     EDITTEXT        32002,92,17,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
     LTEXT           "Frame in cache",-1,8,32,64,8,NOT WS_GROUP
     EDITTEXT        32003,92,29,48,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
@@ -702,10 +702,10 @@ BEGIN
     EDITTEXT        32104,144,175,121,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
     LTEXT           "Nome file di output predefinito",-1,8,190,84,8,NOT WS_GROUP
     EDITTEXT        32101,96,187,136,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32301,233,187,32,12,BS_CENTER
+    PUSHBUTTON      "Sfoglia",32301,233,187,32,12,BS_CENTER
     LTEXT           "Suono al termine dell'esportazione",-1,8,202,113,8,NOT WS_GROUP
     EDITTEXT        32102,119,199,113,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
-    PUSHBUTTON      "Browse",32302,233,199,32,12,BS_CENTER
+    PUSHBUTTON      "Sfoglia",32302,233,199,32,12,BS_CENTER
     LTEXT           "Thread per il video (0=automatico)",-1,8,214,108,8,NOT WS_GROUP
     EDITTEXT        32010,119,211,25,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
     CONTROL         "Assegna a una CPU specifica",32217,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,212,106,11
